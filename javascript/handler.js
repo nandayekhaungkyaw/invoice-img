@@ -20,6 +20,25 @@ itemOrderName.value=itemName.querySelector("#itemNameCard").innerText
 
 }
 
+export const cardDelet=(event)=>{
+  let itemName=event.target.closest('.card')
+  Swal.fire({
+    title: "Are you sure?",
+    text: "You won't be able to revert this!",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "Yes, delete it!"
+  }).then((result) => {
+    if (result.isConfirmed) {
+        itemName.remove()
+      
+    }
+  });
+ 
+}
+
 export const deletHandler=(event)=>{
 
     let itemName=event.target.closest('.cards')
