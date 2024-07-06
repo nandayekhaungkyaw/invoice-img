@@ -39,9 +39,6 @@ export const items=[
         price:1300
     }
 ]
-items.forEach((item)=>{
-    cardControl(item.link,item.item,item.price)
-    
-})
+
 
 

@@ -1,6 +1,6 @@
 
 import { cardControl } from "./Card";
-import { items } from "./items";
+
 import { cardGroup, newForm, newPrice, newProduct, Url } from "./selector";
 import Swal from 'sweetalert2'
 
@@ -20,36 +20,12 @@ export const newproductHandler=(event)=>{
           });
 
         }else{
-          items.push({
-            item:`${newProduct.value}`,
-        link:`${Url.value}`,
-        price:`${newPrice.value}`
-        })
-        Url.value=null
-        newProduct.value=null
-        newPrice.value=null
-       
-          
-        }
 
-        let card=cardGroup.querySelectorAll('.card')
-        card.forEach((oneCard)=>{
-         oneCard.remove()
- 
-        })
-       
-        
-        items.forEach((item)=>{
-          cardControl(item.link,item.item,item.price)
+          cardControl(Url.value,newProduct.value,newPrice.value)
+          newForm.reset()
 
-        })
-
-
-     
-        
       
-       
-      } else {
+      }} else {
        
         Swal.fire({
             title: "Url?",
