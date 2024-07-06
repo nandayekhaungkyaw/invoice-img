@@ -5,7 +5,7 @@ export const items=[
     {
         
         item:"strawberry",
-        link:'./img/strawberry.jpg',
+        link:'https://i.pinimg.com/564x/49/95/04/49950406155e21ab044d3d1cf8b371a0.jpg',
         price:2000
     },
     {
