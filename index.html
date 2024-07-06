@@ -175,7 +175,7 @@
         </footer>
       </section>
 
-      <section class="col-span-2 mt-20 bg-red-200">
+      <section class="col-span-2 mt-20 bg-slate-500 rounded-md px-2">
         <!-- sidebar -section  -->
         <section
           id="sideBar"
@@ -189,7 +189,7 @@
           </div>
 
           <!-- items in side bar  -->
-          <div id="productGroup" class="px-3  flex flex-col scroll-mb-48">
+          <div id="productGroup" class="px-4  flex flex-col scroll-mb-48 ">
           <div  class=" last:block hidden">
             <img class=" w-full h-1/2  items-center " src="./img/74f4d41f25d5f83d84f95e1902bef5b8.jpg" alt="">
 
@@ -213,12 +213,12 @@
 
           <!-- footer in sidebar  -->
           <footer class="mt-auto">
-            <form class="grid grid-cols-2 gap-2 mb-6 px-4" id="form">
+            <form id="formProduct" class="grid grid-cols-2 gap-2 mb-6 px-4" id="form">
               <input id="itemOrderName" type="text" class="col-span-1" />
               <input id="itemPrice" type="number" />
 
               <input id="quantity" placeholder="quantity" type="number" />
-              <input id="totalPrice" placeholder="ကျသင့်ငွေ" type="number" />
+              <input id="totalPrice" placeholder="ကျသင့်ငွေ" type="number" required />
             </form>
             <div class="grid grid-cols-3 px-4 mb-20" id="numberGroup">
               <button class="col-span-1 border border-solid p-5 text-center">
@@ -257,7 +257,7 @@
               <button class="col-span-2 border border-solid p-5 text-center">
                 Check
               </button>
-              <button class="col-span-1 border border-solid p-5 text-center">
+              <button  class="col-span-1 border border-solid p-5 text-center">
                 Order
               </button>
             </div>

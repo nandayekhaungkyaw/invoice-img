@@ -1,5 +1,7 @@
-import { calculatePrice } from "./calculatePrice";
-import { form, itemPrice, quantity, totalPrice } from "./selector";
+
+
+import Swal from 'sweetalert2'
+import { form, formProduct, itemPrice, quantity, totalPrice } from "./selector";
 import { sidBarProductHandler } from "./sidebarproduct";
 
 export const calculatorHandler=(event)=>{
@@ -12,11 +14,25 @@ export const calculatorHandler=(event)=>{
         console.log(calculate);
         totalPrice.value=calculate
      }else if(event.target.innerText=="Order"){
+        
 
-        sidBarProductHandler()
-        calculatePrice()
+        
+        // calculatePrice()
+        if(quantity.value=='' || totalPrice.value == ''){
+            Swal.fire({
+                title: "Empty ?",
+                text: "Put quantity andYou should click check ",
+                icon: "question"
+              });
+
+        }else{
+            sidBarProductHandler()
+            formProduct.reset()
+        }
        
-       form.reset()
+       
+       
+      
 
 
      } else{
@@ -26,3 +42,4 @@ export const calculatorHandler=(event)=>{
   
 
 }
+

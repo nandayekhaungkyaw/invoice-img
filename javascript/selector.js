@@ -20,6 +20,8 @@ export const newProduct=document.querySelector("#newProduct")
 export const newForm=document.querySelector("#newForm")
 
 export const newPrice=document.querySelector("#newPrice")
+export const formProduct=document.querySelector("#formProduct")
+
 
 
 
