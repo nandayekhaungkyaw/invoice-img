@@ -8,7 +8,7 @@ export const newproductHandler=(event)=>{
     
 
     let url=Url.value
-    if (url.startsWith('http://') || url.startsWith('https://' ) && url.endsWith('jpg')) {
+    if (url.startsWith('http://') || url.startsWith('https://' ) && url.endsWith('jpg') || url.endsWith('png') ) {
         // Ensure the URL starts with http:// or https://
       
         console.log(url);
@@ -53,7 +53,7 @@ export const newproductHandler=(event)=>{
        
         Swal.fire({
             title: "Url?",
-            text: "You should put img url link start-with https and end-with jpg",
+            text: "You should put img url link start-with https and end-with jpg or png",
             icon: "question"
           });
       }
