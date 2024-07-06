@@ -11,6 +11,7 @@ const listeners=()=>{
     numberGroup.addEventListener('click',calculatorHandler)
     productGroup.addEventListener('dblclick',deletHandler)
     addBtn.addEventListener('click',newproductHandler)
+    
    
 }
 
