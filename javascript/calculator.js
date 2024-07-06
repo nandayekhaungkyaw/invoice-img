@@ -1,13 +1,13 @@
 
 
 import Swal from 'sweetalert2'
-import { form, formProduct, itemPrice, quantity, totalPrice } from "./selector";
+import {  formProduct, itemPrice, quantity, totalPrice } from "./selector";
 import { sidBarProductHandler } from "./sidebarproduct";
 
 export const calculatorHandler=(event)=>{
    
     if(event.target.innerText=="delete"){
-        form.reset()
+        formProduct.reset()
        
     }else if (event.target.innerText=="Check") {
         let calculate= parseInt(quantity.value) * parseInt(itemPrice.value)
