@@ -11,31 +11,31 @@ export const items=[
     {
         
         item:"orange",
-        link:'./img/orange.jpg',
+        link:'https://i.pinimg.com/564x/5b/c3/3e/5bc33e6521b149588e3bfa277a3eee6b.jpg',
         price:1100
     },
     {
         
         item:"apple",
-        link:'./img/apple.jpg',
+        link:'https://i.pinimg.com/564x/2b/28/18/2b2818db5b1c317ff497b0447d9b89d6.jpg',
         price:1300
     },
     {
        
         item:"banana",
-        link:'./img/banana.jpg',
+        link:'https://i.pinimg.com/564x/e3/1e/fc/e31efc84ab8537107d12b2c5d73f2395.jpg',
         price:200
     },
     {
        
         item:"pineapple",
-        link:'./img/pineapple.jpg',
+        link:'https://i.pinimg.com/564x/7d/dc/08/7ddc085cedaad649a4134b05abbfd188.jpg',
         price:2200
     },
     {
         
         item:"watermelon",
-        link:'./img/durain.jpg',
+        link:'https://i.pinimg.com/564x/f3/f7/2e/f3f72e6978d9db5e1dadf4d6e0f0efe7.jpg',
         price:1300
     }
 ]
